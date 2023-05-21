@@ -1,0 +1,13 @@
+
+sudo apt update
+sudo apt install apache2
+sudo apt install mysql-server
+sudo apt install php libapache2-mod-php php-mysql
+sudo systemctl restart apache2
+
+cp -r php-project/ /var/www/html/php-project/
+mysql < adminDB.sql
+
+showing page in localhost:80/php-project/index.php
+
+
